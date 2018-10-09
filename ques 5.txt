@@ -1,0 +1,31 @@
+Question 5(i):
+According to the latest report on country's road accidents and deaths,over 48,000 people died in crashes caused due to overtaking during 2014.It is better to be alert when overtaking or letting any other vehicle to overtake you on the road.Numbers show how dangerous and risky overtaking is on indian roads.Last year,over 30,000 lives were lost in road crashes caused due to overtaking,according to the recent road traffic accident report by transport ministry.It also shows how merging and diverging resulted in nearly 26,000 crashes that claimed around 7280 lives last year.
+
+"Overtaking is a menace across all roads simply because neither the road users nor the enforcement agencies are aware of the right of way.The rules clearly mention that you can't overtake at crossings, junction, bends or wherever you can't see the traffic clearly.Infact two lane roads without dividers are more dangerous so far overtaking is concerned.Drivers themselves,when asked,rate overtaking as the most dangerous monoeuvre and of course they have little opportunity to learn and practice it in driving lessons.
+
+Finding solution to the cause of maximum no. of accidents due to overtaking i.e on highways or two lane roads without divider we plan to design a detector to be placed on the dashboard of each vehicle which will send indications to the vehicles behind if it is safe to overtake depending upon the distance from the vehicles coming from the opposite direction.
+
+(a)-DETECTING A VEHICLE:
+Our detector will comprise of a software pipeline which is capable of identifying cars in a video from a front facing camera on a car.The process of detecting the vehicles can be summed up in the following steps.
+(a)- Training data analysis
+(b)- Feature extraction
+(c)- Model training
+(d)- Sliding windows
+(e)- Eliminating false positives
+Training data consists of images of cars from different angles and non car objects to categorise between them.
+We will be using HISTOGRAM OF ORIENTED GRADIENTS(HOG) to increase our accuracy rates.
+For prediction model we will be using LINEAR SUPPORT VECTOR MACHINES.
+
+MINIMUM DISTANCE:
+According to our model the minimum distance is depicted in the diagram below:
+
+
+CALCULATING X:
+The maximum time for overtaking is 7 seconds so on a safer side we consider 10 seconds as a time taken for overtaking.
+Considering same traffic situation for both the opposite sides then the relative velocity between these two vehicles will be 2v.
+Minimum distance=2v*10.
+If the distance between the car and the incoming vehicle is less than this minimum distance (not safe for overtaking for vehicles behind),the an indicator connected with this detector behind vehicle A will start glowing.
+
+(b)-TENSOR FLOW
+(c)-Raspberry pi
+(d)-
